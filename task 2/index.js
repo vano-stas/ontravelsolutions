@@ -20,6 +20,7 @@ const scanSize = () => {
     let currentOption = allSize.filter((item) => {
             return item.value == scan[1];
         });
+    sizePart = `size=${scan[1]}`;
     currentOption.forEach((item)=> item.checked = true);
 };
 
@@ -33,6 +34,7 @@ const scanColor = () => {
                 if (elem == item.value) return elem;
             }))
         });
+    colorPart = `color=${scan[2]}`;
     allColor.forEach((item)=> item.checked = false);
     currentOption.forEach((item)=> item.checked = true);
 };
@@ -47,6 +49,7 @@ const scanManufacturer = () => {
                 if (elem == item.value) return elem;
             }))
         });
+    manufacturerPart = `manufacturer=${scan[1]}`;
     allManufacturer.forEach((item)=> item.selected = false);
     currentOption.forEach((item)=> item.selected = true);
 }

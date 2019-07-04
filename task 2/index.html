@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Task 2</title>
+</head>
+<body>
+    <input id="url" type="text" value='http://любой_домен/filter?size=M&color=1,2&manufacturer=aaa,eee'>
+    <button id="btn-url">Распознать URL</button>
+    <form id="form">
+        <div>
+            <label>Size: </label>
+            <input type="radio" name='size' value='S'>
+            <span>S</span>
+            <input type="radio" name='size' value='M'>
+            <span>M</span>
+            <input type="radio" name='size' value='L'>
+            <span>L</span>
+        </div>
+        <div>
+            <label>Color: </label>
+            <input name="color" type="checkbox" value="1">
+            <span>red</span>
+            <input name="color" type="checkbox" value="2">
+            <span>yellow</span>
+            <input name="color" type="checkbox" value="3">
+            <span>white</span>
+            <input name="color" type="checkbox" value="4">
+            <span>black</span>
+            <input name="color" type="checkbox" value="5">
+            <span>green</span>
+        </div>
+        <div>
+            <label>Manufacturer: </label>
+            <select multiple name="manufacturer">
+                <option name="manufacturer"  value="aaa">aaa</option>
+                <option name="manufacturer" value="b&c">b&c</option>
+                <option name="manufacturer" value="ddd">ddd</option>
+                <option name="manufacturer" value="eee">eee</option>
+            </select>
+        </div>
+        <div>
+            <label>Sale: </label>
+            <input type="checkbox" value='1'>
+        </div>
+    </form>
+    <script src="./index.js"></script>
+</body>
+</html>
